@@ -1,113 +1,156 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<>
+			<header className="w-screen py-8 px-6 flex flex-row justify-between">
+				<h1 className="font-bold text-4xl text-dark_blue">Shortly</h1>
+				{/* nav */}
+			</header>
+			<main className="flex flex-col ">
+				<div className="flex flex-col gap-6 mb-28">
+					<Image
+						src="/illustration-working.svg"
+						alt="A person working in a computer illustration"
+						width={733}
+						height={482}
+						priority
+						className="w-[32rem] max-w-none ml-6 mb-8"
+					/>
+					<h2 className="text-5xl font-bold tracking-tight text-dark_blue text-center">
+						More than just shorter links
+					</h2>
+					<p className="text-center text-base text-gray">
+						Build your brand&apos;s recognition and get detailed
+						insights on how your links are performing
+					</p>
+					<button className="bg-cyan text-white font-bold w-fit self-center text-xl p-4 px-6 rounded-full">
+						Get Started
+					</button>
+				</div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+				<div className="bg-[url('/bg-shorten-mobile.svg')] mx-6 p-6 bg-no-repeat bg-violet-dark rounded-xl bg-right-top">
+					<form action="" className="flex flex-col gap-4 ">
+						<input
+							type="text"
+							placeholder="Shorten a link here..."
+							className="p-3 rounded-lg"
+						/>
+						<button className="p-3 rounded-lg bg-cyan text-lg text-white font-bold">
+							Shorten It!
+						</button>
+					</form>
+				</div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+				<div>
+					<div className="flex flex-col gap-4 text-center p-6 my-16">
+						<h3 className="text-3xl text-dark_blue font-bold">
+							Advanced Statistics
+						</h3>
+						<p className="text-gray ">
+							Track how your links are performing across the web
+							with our advanced statics dashboard
+						</p>
+					</div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+					<div className="Card Ctop">
+						<Image
+							src="/icon-brand-recognition.svg"
+							alt="A graphic chart going up icon"
+							height={40}
+							width={40}
+						/>
+						<h4>Brand Recognition</h4>
+						<p>
+							Boost your brand recognition with each click.
+							Generic links don&apos; mean a thing. Branded links
+							help instil confidence in your content.
+						</p>
+					</div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+					<div className="Card Cmid">
+						<Image
+							src="/icon-detailed-records.svg"
+							alt="A velocimeter with the pointer on the middle icon"
+							height={40}
+							width={40}
+						/>
+						<h4>Detailed Records</h4>
+						<p>
+							Gain insights into who is clicking your links.
+							Knowing when and where people engage with your
+							content helps inform better decisions.
+						</p>
+					</div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+					<div className="Card Cbot">
+						<Image
+							src="/icon-fully-customizable.svg"
+							alt="Painting utensils icon"
+							height={40}
+							width={40}
+						/>
+						<h4>Fully Customizable </h4>
+						<p>
+							Improve brand awareness and content discoverability
+							through customizable links, supercharging audience
+							engagement
+						</p>
+					</div>
+				</div>
+			</main>
+			<article>
+				<h2>Boost your links today</h2>
+				<button>Get Started</button>
+			</article>
+			<footer className="">
+				<h1>Shortly</h1>
+				<div className="FooterP">
+					<h4>Features</h4>
+					<span>Link Shortening</span>
+					<span>Branded Links</span>
+					<span>Analytics</span>
+				</div>
+				<div className="FooterP">
+					<h4>Resources</h4>
+					<span>Blog</span>
+					<span>Developers</span>
+					<span>Support</span>
+				</div>
+				<div className="FooterP">
+					<h4>Company</h4>
+					<span>About</span>
+					<span>Our Team</span>
+					<span>Careers</span>
+					<span>Contact</span>
+				</div>
+				<div>
+					<Image
+						width={24}
+						height={24}
+						src="/icon-facebook.svg"
+						alt="Facebook icon"
+					/>
+					<Image
+						width={24}
+						height={20}
+						src="/icon-twitter.svg"
+						alt="Twitter icon"
+					/>
+					<Image
+						width={24}
+						height={24}
+						src="/icon-pinterest.svg"
+						alt="Pinterest icon"
+					/>
+					<Image
+						width={24}
+						height={24}
+						src="/icon-instagram.svg"
+						alt="Instagram icon"
+					/>
+				</div>
+			</footer>
+		</>
+	);
 }
