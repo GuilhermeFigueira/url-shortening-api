@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Ctop,
+.Cmid,
+.Cbot {
+	@apply flex flex-col mb-10;
+}
+.Cbot {
+	@apply mb-20;
+}
+
+.Card {
+	@apply bg-white rounded-lg text-center mx-6 flex flex-col items-center  px-6 pb-8;
+}
+.Card h4 {
+	@apply mb-6 font-bold text-2xl text-dark_blue;
+}
+.Card p {
+	@apply text-violet-grayish;
+}
+.ImgBg {
+	@apply -translate-y-1/2 bg-violet-dark rounded-full p-6;
+}
+.Vl {
+	@apply self-center border-l-cyan border-l-8;
+	height: 50px;
+}
+
+.FooterP {
+	@apply flex flex-col items-center my-6;
+}
+.FooterP h4 {
+	@apply mb-4 font-bold;
+}
+.FooterP span {
+	@apply tracking-tight text-violet-grayish p-1;
+}
