@@ -5,14 +5,14 @@
 .Ctop,
 .Cmid,
 .Cbot {
-	@apply flex flex-col mb-10;
+	@apply flex flex-col mb-10 lg:flex-row lg:mb-0;
 }
 .Cbot {
 	@apply mb-20;
 }
 
 .Card {
-	@apply bg-white rounded-lg text-center mx-6 flex flex-col items-center  px-6 pb-8;
+	@apply bg-white rounded-lg text-center mx-6 flex flex-col items-center  px-6 pb-8 max-w-sm lg:items-start lg:text-start lg:px-8 lg:mx-0 h-fit;
 }
 .Card h4 {
 	@apply mb-6 font-bold text-2xl text-dark_blue;
@@ -24,8 +24,7 @@
 	@apply -translate-y-1/2 bg-violet-dark rounded-full p-6;
 }
 .Vl {
-	@apply self-center border-l-cyan border-l-8;
-	height: 50px;
+	@apply self-center border-l-cyan border-l-8 h-12 lg:border-l-0 lg:border-b-8 lg:border-b-cyan lg:w-12;
 }
 
 .FooterP {
