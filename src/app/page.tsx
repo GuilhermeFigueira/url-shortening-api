@@ -1,39 +1,37 @@
 import Image from "next/image";
+import Header from "./Header";
 
 export default function Home() {
 	return (
 		<>
-			<header className="py-8 px-6 flex flex-row justify-between ">
-				<h1 className="font-bold text-4xl text-dark_blue">Shortly</h1>
-				nav
-			</header>
-			<main className="flex flex-col ">
-				<div className="flex flex-col h-screen bg-white lg:flex-row-reverse  lg:gap-6 lg:w-full lg:h-auto lg:mb-24">
-					<div className="overflow-hidden sm:self-center lg:self-auto">
+			<Header></Header>
+			<main className="flex flex-col">
+				<div className="flex flex-col h-screen bg-white xl:flex-row-reverse lg:w-full lg:h-auto lg:mb-32 md:items-center lg:justify-center max-w-[82rem] mx-auto lg:mt-20">
+					<div className="overflow-hidden sm:self-center">
 						<Image
 							src="/illustration-working.svg"
 							alt="A person working in a computer illustration"
 							width={733}
 							height={482}
 							priority
-							className="w-[32rem] max-w-none ml-6 mb-8 "
+							className="w-[32rem] max-w-none ml-6 mb-8 lg:m-0 lg:w-[35rem]"
 						/>
 					</div>
-					<div className="flex flex-col gap-6 lg:justify-self-center">
-						<h2 className="text-5xl font-bold tracking-tight text-dark_blue text-center">
+					<div className="flex flex-col gap-6 text-center xl:text-start items-center max-w-[44rem] xl:items-start lg:gap-0">
+						<h2 className="text-5xl font-bold tracking-tight text-dark_blue md:text-7xl">
 							More than just shorter links
 						</h2>
-						<p className="text-center text-base text-violet-grayish">
+						<p className="text-base text-violet-grayish max-w-sm">
 							Build your brand&apos;s recognition and get detailed
 							insights on how your links are performing
 						</p>
-						<button className="bg-cyan text-white font-bold w-fit self-center text-xl p-4 px-6 rounded-full">
+						<button className="bg-cyan text-white font-bold w-fit text-xl p-4 px-6 rounded-full lg:mt-6 lg:text-lg">
 							Get Started
 						</button>
 					</div>
 				</div>
 				<div className="bg-[#f0f1f6]">
-					<div className="bg-[url('/bg-shorten-mobile.svg')] mx-6 p-6 bg-no-repeat bg-violet-dark rounded-xl bg-right-top -translate-y-1/2 md:bg-[url('/bg-shorten-desktop.svg')] lg:bg-center lg:bg-cover lg:p-12 lg:mx-48">
+					<div className="bg-[url('/bg-shorten-mobile.svg')] mx-6 p-6 bg-no-repeat bg-violet-dark rounded-xl bg-right-top -translate-y-1/2 md:bg-[url('/bg-shorten-desktop.svg')] lg:bg-center lg:bg-cover lg:p-12 lg:mx-auto max-w-[80rem]">
 						<form
 							action=""
 							className="flex flex-col gap-4 lg:grid lg:grid-flow-col lg:[grid-template-columns:75%_25%]"
